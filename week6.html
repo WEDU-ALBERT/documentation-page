@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Week 6: INTRODUCTION TO LASER CUTTING - Wedu Albert</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+		
+		<style>
+			.week-date { color: #666; font-style: italic; }
+			.less-bold { font-weight: 400; }
+			.image-caption { text-align: center; font-style: italic; color: #666; margin-top: -10px; }
+
+			/* In-Page Navigation Box CSS */
+			.inpage-nav-box {
+				float: right;
+				position: sticky;
+				top: 20px;
+				width: 220px;
+				margin-bottom: 1.5em;
+				background-color: #f8f8f8;
+				border: 1px solid #e0e0e0;
+				padding: 15px;
+				border-radius: 8px;
+				box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+				font-size: 0.9em;
+				z-index: 1000;
+			}
+
+			.inpage-nav-box h4 {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 0;
+				margin-bottom: 12px;
+				font-size: 1em;
+				font-weight: bold;
+				color: #3d4449;
+				border-bottom: 1px solid #e0e0e0;
+				padding-bottom: 8px;
+			}
+
+			.nav-toggle-button {
+				background: none;
+				border: 1px solid #cccccc;
+				color: #333333;
+				cursor: pointer;
+				font-size: 0.8em;
+				font-weight: bold;
+				padding: 1px 6px;
+				border-radius: 4px;
+				line-height: 1.2;
+				margin-left: 5px;
+			}
+
+			.inpage-nav-box ul { list-style: none; padding: 0; margin: 0; }
+			.inpage-nav-box ul li { margin-bottom: 8px; }
+			.inpage-nav-box ul li a { text-decoration: none; color: #2980B9; }
+			.inpage-nav-box ul li a:hover { text-decoration: underline; }
+
+			@media screen and (max-width: 1200px) {
+				.inpage-nav-box { float: none; position: static; width: 100%; margin-bottom: 20px; }
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<!-- Main Content -->
+			<div id="main">
+				<div class="inner">
+
+					<header id="header">
+						<a href="index.html" class="logo"><strong>UNIPOD Botswana |</strong> Wedu Albert</a>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-github"></a></li>
+							<li><a href="#" class="icon brands fa-linkedin"></a></li>
+							<li><a href="mailto:wedualbert@gmail.com" class="icon solid fa-envelope"></a></li>
+						</ul>
+					</header>
+
+					<section>
+
+						<div class="inpage-nav-box">
+							<h4>
+								On This Page
+								<button class="nav-toggle-button">-</button>
+							</h4>
+							<ul id="nav-list-weekX">
+								<li><a href="#intro-section">Introduction</a></li>
+								<li><a href="#process-docs-section">Process Documentation</a></li>
+								<li><a href="#reflection-section">Reflection</a></li>
+							</ul>
+						</div>
+
+						<header class="main">
+							<h1>Week 6: Laser Cutting (CO₂ Laser)</h1>
+							<p class="week-date">Date: From – To (Insert dates here)</p>
+						</header>
+
+						<!-- Quick Summary -->
+						<div class="box" id="quick-summary">
+							<header class="major">
+								<h3>Quick Summary</h3>
+							</header>
+
+							<ul class="alt">
+								<li><strong>Skills Learned:</strong>
+									<ol type="I">
+										<li>Operating a CO₂ laser cutter</li>
+										<li>Setting up laser machine peripherals (chiller & extractor)</li>
+										<li>Preparing DXF files in SolidWorks</li>
+										<li>Understanding laser parameters (speed, power, frequency)</li>
+									</ol>
+								</li>
+
+								<li><strong>Digital Tools Used:</strong>
+									<ol type="I">
+										<li>SolidWorks: Preparing 2D sketches for cutting and save as DXF or Illustrator file</li>
+										<li>Illustrator: Convert 2D sketch from Illustrator file to PDF</li>
+									</ol>
+								</li>
+
+								<li><strong>Topics Covered:</strong>
+									<ol type="I">
+										<li>Machine setup and safety</li>
+										<li>Material preparation</li>
+										<li>Laser settings and parameter selection</li>
+									</ol>
+								</li>
+
+								<li><strong>Key Concepts:</strong>
+									<ol type="I">
+										<li>Kerf compensation</li>
+										<li>Focus height adjustment</li>
+										<li>Vector vs raster engraving</li>
+										<li>File extensions</li>
+									</ol>
+								</li>
+
+								<li><strong>Challenges Faced:</strong>
+									<ol type="I">
+										<li>Incorrect focus distance</li>
+										<li>DXF export scaling issues</li>
+										<li>Software won't open DXF file from SolidWorks unless the file is converted to PDF</li>
+										<li>Bed not level</li>
+										<li>Weak network connection</li>
+									</ol>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Introduction -->
+						<header class="major">
+							<h2 id="intro-section">Introduction</h2>
+						</header>
+
+						<p>
+							Laser cutting is a digital fabrication technique that uses a high-powered CO₂ laser beam to cut or engrave material 
+							such as acrylic, MDF, plywood, cardboard, and leather.  
+							The machine follows vector paths generated from software like SolidWorks, allowing for accurate and repeatable cuts.
+						</p>
+
+						<!-- Process Documentation -->
+						<header class="major">
+							<h2 id="process-docs-section">Process Documentation</h2>
+						</header>
+
+						<h3>1. Setting Up the CO₂ Laser Machine</h3>
+
+						<ol type="I">
+							<li>Place your material on the cutting bed.</li>
+							<img src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Image 2025-12-13 at 09.48.31 (1).jpeg" alt="material loading" width="300" height="300" />
+							<li>Switch on the water chiller (must reach correct (room temperature)).</li>
+							<img src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Image 2025-12-13 at 09.48.34 (1).jpeg" alt="water chiller" width="300" height="300" />
+							<li>Check water flow to the laser tube.</li>
+							<li>Turn on the extractor fan to remove fumes.</li>
+							<img src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Image 2025-12-13 at 09.48.37 (1).jpeg" alt="extractor fan" width="300" height="300" />
+						    <li>Switch on the main laser power.</li>
+							<img src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Image 2025-12-13 at 09.48.30 (2).jpeg" alt="main laser power" width="300" height="300" />
+							<li>Home the machine using the control panel.</li>
+							<li>Adjust the focus height using the focusing tool.</li>
+						</ol>
+
+						<h3>2. Preparing the Drawing in SolidWorks</h3>
+
+						<ol type="I">
+							<li>Design for Assembly (DFMA)</li>
+							<li>Draw a series of designs which assemble to make one product in my case an outdoor bench</li>
+							<li>Fully define sketches and ensure accuracy by assembling parts in assembly.</li>
+							<li>Save your parts: Click > File > Save As > DXF repeat for all parts of the assembly.</li>
+							<li>NB: Choose Face when saving parts</li>
+						</ol>
+
+						<h3>3. Preparing DXF File for Cutting</h3>
+
+						<p>The Full Spectrum CO2 laser-cutting machine operates through a network-based communication system. 
+							Its control software is embedded within the machine's internal architecture, eliminating the need 
+							for external installation. Access to the machine's interface is achieved by locating and entering its
+							 designated IP address, which launches the integrated web-based control environment.
+
+							Connection between the computer and the laser-cutting system is established via an Ethernet cable. 
+							Provided that both devices are connected to the same network, stable communication is maintained,
+							 enabling seamless data transfer and operational control of the machine.</p>
+						
+						<img src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Image 2025-12-13 at 09.48.38.jpeg" alt="ethernet connection" width="500" height="300" />
+						<img src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Image 2025-12-13 at 09.48.36 (1).jpeg" alt="ethernet connection" width="500" height="300" />
+						
+						<p><strong>Steps to access the laser cutting software:</strong></p>
+						
+						<ol type="I">
+							<li>On the control panel turn on the machine using a key</li>
+								<img src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Image 2025-12-13 at 09.48.40 (1).jpeg" alt="turn on machine using key" width="700" height="600" />
+								<img src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Image 2025-12-13 at 09.48.37 (2).jpeg" alt="control panel" width="500" height="500" />
+								<img src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Image 2025-12-13 at 09.48.32 (2).jpeg" alt="machine home" width="500" height="700" />
+						
+							<li>Check network settings to find the IP address of the laser machine</li>
+								<img src="images/Laser cutting/WhatsApp Image 2025-12-13 at 09.48.29 (1).jpeg" alt="laser machine IP address" width="500" height="300" />
+								<img src="images/Laser cutting/WhatsApp Image 2025-12-13 at 09.48.32.jpeg" alt="software interface" width="500" height="600" />
+							<li>Open browser to access laser cutting software compatible with our CO₂ laser</li>
+							<li>Search for laser machine's IP address</li>
+								<img src="images/Laser cutting/search web using ip adress to locate machine.png" alt="search web using ip adress to locate machine" width="800" height="300" />
+							<li>Software interface</li>
+								<img src="images/Laser cutting/interfaca.png" alt="software interface" width="900" height="400" />
+							<li>Import the DXF file</li>
+								<img src="images/Laser cutting/Screenshot 2025-12-08 161454.png" alt="import DXF file" width="900" height="200" />
+								<p>Drag and drop DXF or PDF file into software workspace</p>
+								<img src="images/Laser cutting/nesting.png" alt="import DXF file" width="900" height="400" />
+								<p>Check if the scale matches your original dimensions.</p>
+								<p>Assign colors:</p>
+								<ul>
+									<li>Red → Cutting</li>
+									<li>Black → Engraving</li>
+								</ul>
+								<p>Set parameters:</p>
+								<ul>
+									<li>Cutting: Power 60–80%, Speed 8–12 mm/s</li>
+									<li>Engraving: Power 20–30%, Speed 200–300 mm/s</li>
+								</ul>
+							</li>
+						</ol>
+
+						<h3>4. Cutting the Job</h3>
+
+						<ol type="I">
+							<li>Run parameter check to ensure work piece is within the material
+								<img src="images/Laser cutting/Screenshot 2025-12-08 162129.png" alt="parameter check" width="900" height="400" />
+								<video width="400" height="400" controls>
+									<source src="images/Laser cutting/WhatsApp Unknown 2025-12-14 at 12.26.45/WhatsApp Video 2025-12-13 at 09.48.28.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</li>
+							<li>Monitor the cutting process constantly.</li>
+							<li>Wait for fumes to clear after cutting.</li>
+							<li>Remove the finished parts.</li>
+						</ol>
+
+						<img src="images/laser/final-cut.jpg" width="600" alt="Final cut result">
+
+						<!-- Reflection -->
+						<header class="major">
+							<h2 id="reflection-section">Reflection</h2>
+						</header>
+						<p>
+							Learning to operate the CO₂ laser cutter was an exciting and highly practical experience.
+							I learned how different materials respond to changes in speed and power, and I gained confidence in generating
+							DXF files directly from SolidWorks. Understanding safety protocols and machine setup helped me appreciate 
+							how sensitive the machine is to cooling, focusing, and airflow.  
+							This skill will be extremely useful in prototyping, product design, and fabrication work.
+						</p>
+
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar"></div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/sidebar-loader.js"></script>
+
+	</body>
+</html>
